@@ -33,10 +33,13 @@ function listBooks() {
 }
 
 function insertSmall() {
+    const t1 = performance.now();
     var book = {id: 1, title: "Book1", author: "Kritsana"};
     client.insert(book, function(error, empty) {
         printResponse(error, empty);
     });
+    const t2 = performance.now()
+    console.log("use time = " + (t2-t1).toString() + "ms.");
 }
 
 function insertBig(n) {
@@ -54,6 +57,5 @@ function insertBig(n) {
         }
     }
     const t2 = performance.now()
-    console.log('TEST')
     console.log("use time = " + (t2-t1).toString() + "ms.");
 }

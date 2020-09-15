@@ -1,4 +1,4 @@
-var grpc = require('grpc');
+import grpc from 'grpc';
 
 var booksProto = grpc.load('books.proto');
 
@@ -8,7 +8,7 @@ var books = [
   ];
 
 // add the events package
-var events = require('events');
+import events from 'events';
 // add the bookStream global variable
 var bookStream = new events.EventEmitter();
   
