@@ -36,10 +36,10 @@ function insertSmall() {
     const t1 = performance.now();
     var book = {id: 1, title: "Book1", author: "Kritsana"};
     client.insert(book, function(error, empty) {
-        printResponse(error, empty);
+        // printResponse(error, empty);
     });
     const t2 = performance.now()
-    console.log("use time = " + (t2-t1).toString() + "ms.");
+    console.log("use time = " + (t2-t1).toString() + "ms."); 
 }
 
 function insertBig(n) {
@@ -50,7 +50,7 @@ function insertBig(n) {
             book.id = i;
             book.title = "Book";
             client.insert(book, function(error, empty) {
-                printResponse(error, empty);
+                // printResponse(error, empty);
             });
         } catch (e) {
             console.error("Cannot insert book" + e.message);
