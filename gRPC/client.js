@@ -20,10 +20,10 @@ var client = new booksProto.books.BookService('127.0.0.1:50051',
 // else if (command == 'watch')
 //     watchBooks();
 function printResponse(error, response) {
-  if (error)
-    console.log('Error: ', error);
-  else
-    console.log(response);
+  // if (error)
+  //   console.log('Error: ', error);
+  // else
+  //   console.log(response);
 }
 
 class Client {
