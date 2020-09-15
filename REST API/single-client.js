@@ -1,10 +1,11 @@
 import axios from "axios";
-import { performance } from 'perf_hooks';
+import { performance } from "perf_hooks";
 
 const baseURL = "http://localhost:3000/book";
 
 class Client {
   async insertSmall() {
+    const t1 = performance.now();
     try {
       let book = {
         id: 13,
@@ -12,6 +13,8 @@ class Client {
         author: "Melvin",
       };
       await axios.post(`${baseURL}/insert`, book);
+      const t2 = performance.now();
+      console.log("use time = " + (t2 - t1).toString() + " ms.");
       return "success";
     } catch (e) {
       console.error("Cannot insert book " + e.message);
@@ -36,7 +39,7 @@ class Client {
       }
     }
     const t2 = performance.now();
-    console.log("use time = " + (t2-t1).toString() + " ms.");
+    console.log("use time = " + (t2 - t1).toString() + " ms.");
     return "success";
   }
 }
