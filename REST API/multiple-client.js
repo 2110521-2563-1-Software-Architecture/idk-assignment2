@@ -18,15 +18,13 @@ async function start() {
         await client.insertBook(book);
         break;
       case 2:
-        await client.getBook((a - 1).toString());
+        await client.getBookById((a - 1).toString());
         break;
       case 0:
         await client.deleteBook((a + 1).toString());
         break;
     }
   }
-  const client = new Client();
-  await client.listBooks();
   let t2 = performance.now();
   console.log("use time = " + (t2 - t1).toString() + " ms.");
 }
