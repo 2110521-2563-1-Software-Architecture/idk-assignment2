@@ -14,7 +14,7 @@ Things to be delivered:
 
 2. Discussion of the results why one method is better the other in which scenarios.
 
-		Protobuf ซึ่งเป็นรูปแบบการเก็บข้อมูลที่ gRPC ใช้ มีขนาดเล็กกว่า JSON ของ REST API เนื่องจาก Protobuf เป็น binary ซึ่ง JSON ไม่ใช่ นอกจากนี้ Protobuf ยังมีขนาด header ที่เล็กกว่า จากที่ได้กล่าวข้างต้นการที่ข้อมูลมีขนาดเล็กกว่าทำให้สามารถส่งข้อมูลได้เร็วกว่า
+	Protobuf ซึ่งเป็นรูปแบบการเก็บข้อมูลที่ gRPC ใช้ มีขนาดเล็กกว่า JSON ของ REST API เนื่องจาก Protobuf เป็น binary ซึ่ง JSON ไม่ใช่ นอกจากนี้ Protobuf ยังมีขนาด header ที่เล็กกว่า จากที่ได้กล่าวข้างต้นการที่ข้อมูลมีขนาดเล็กกว่าทำให้สามารถส่งข้อมูลได้เร็วกว่า
 
 3. Comparison of the gRPC and REST API from the aspects of language neutral, ease of use, and performance.
 
@@ -26,4 +26,4 @@ Things to be delivered:
 
 4. Does your results comply with the results in https://medium.com/@bimeshde/grpc-vs-rest-performance-simplifiedfd35d01bbd4? How?
 	
-		โดยร่วมแล้วคำตอบเป็นไปในทิศทางเดียวกัน gRPC ค่อนข้างจะดีกว่า REST API
+	โดยร่วมแล้วคำตอบเป็นไปในทิศทางเดียวกัน gRPC ค่อนข้างจะดีกว่า REST API
