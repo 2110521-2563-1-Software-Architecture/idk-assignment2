@@ -11,6 +11,9 @@
 
 Things to be delivered:
 1. Graphs showing the benchmarking results with the explanation of your experimental settings.
+	![alt text][single-client]
+	![alt text][multiple-client]
+	![alt text][concurrency]
 
 2. Discussion of the results why one method is better the other in which scenarios.
 
@@ -27,3 +30,7 @@ Things to be delivered:
 4. Does your results comply with the results in https://medium.com/@bimeshde/grpc-vs-rest-performance-simplifiedfd35d01bbd4? How?
 	
 	โดยร่วมแล้วคำตอบเป็นไปในทิศทางเดียวกัน gRPC ค่อนข้างจะดีกว่า REST API
+
+[single-client]: https://raw.githubusercontent.com/2110521-2563-1-Software-Architecture/idk-assignment2/master/single-client.png "Single-client"
+[multiple-client]: https://raw.githubusercontent.com/2110521-2563-1-Software-Architecture/idk-assignment2/master/multiple-client.png "Multiple-client"
+[concurrency]: https://raw.githubusercontent.com/2110521-2563-1-Software-Architecture/idk-assignment2/master/concurrency.png "Concurrency"
