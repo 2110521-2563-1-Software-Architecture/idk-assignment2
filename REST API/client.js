@@ -40,6 +40,8 @@ class Client {
   }
 }
 
+export default Client;
+
 async function start() {
   const command = process.argv[2];
   const client = new Client();
